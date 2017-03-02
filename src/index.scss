@@ -1,0 +1,15 @@
+@import "./vars.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: $PRIMARY;
+}
+
+#logo {
+  max-width: 100%;
+  margin: auto;
+  display: block;
+  width: 600px;
+}

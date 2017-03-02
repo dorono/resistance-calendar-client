@@ -1,0 +1,11 @@
+.Calendar {
+  background: #fff;
+  margin: auto;
+  max-width: 100%;
+  width: 1200px;
+  border-radius: 5px;
+  border: 2px inset #ccc;
+  .even {
+    background: #ffdee6;
+  }
+}

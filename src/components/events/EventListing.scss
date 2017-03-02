@@ -1,0 +1,39 @@
+@import "../../vars.scss";
+
+.EventListing {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #777;
+  &:last-of-type {
+    border-bottom: 0;
+  }
+  .img-container {
+    max-width: 35%;
+    width: 150px;
+    height: 150px;
+  }
+  .main-image {
+    border-radius: 50%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .info {
+    margin-left: 20px;
+  }
+  .title {
+    font-size: 1.4em;
+    color: $SECONDARY;
+    font-weight: bold;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .tag {
+    margin: 0px 5px;
+    color: $SECONDARY;
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+}
