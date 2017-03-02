@@ -28,10 +28,7 @@ export default class EventListing extends React.Component {
         <div className="info">
           <a className="title" href={event.browser_url}>{event.title}</a>
           <p className="time">{time}</p>
-          <p>{event.description.length < 200 ? event.description : event.description.slice(0, 200) + "..."}</p>
-          <div className="tag-container">
-            {event.tags.map(i => <span className="tag" key={i}>#{i}</span>)}
-          </div>
+          <p className="description">{event.description.length < 150 ? event.description : event.description.slice(0, 150) + "..."}</p>
         </div>
       </div>
     )

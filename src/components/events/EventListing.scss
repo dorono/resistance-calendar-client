@@ -2,26 +2,21 @@
 
 .EventListing {
   display: flex;
-  padding: 10px;
-  border-bottom: 1px solid #777;
+  align-items: flex-start;
+  padding: 12px 10px;
+  border-bottom: 1px solid #ddd;
   &:last-of-type {
     border-bottom: 0;
   }
-  .img-container {
-    max-width: 35%;
-    width: 150px;
-    height: 150px;
-  }
   .main-image {
-    border-radius: 50%;
-    max-width: 100%;
-    overflow: hidden;
+    height: 85px;
+    width: 85px;
   }
   .info {
-    margin-left: 20px;
+    margin-left: 10px;
   }
   .title {
-    font-size: 1.4em;
+    font-size: 1.2em;
     color: $SECONDARY;
     font-weight: bold;
     text-decoration: none;
@@ -29,11 +24,8 @@
       text-decoration: underline;
     }
   }
-  .tag {
-    margin: 0px 5px;
-    color: $SECONDARY;
-    &:first-of-type {
-      margin-left: 0;
-    }
+  .description, .time {
+    font-size: 0.8em;
+    margin-bottom: 0;
   }
 }

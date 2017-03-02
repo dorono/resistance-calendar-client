@@ -1,15 +1,30 @@
 @import "./vars.scss";
 
+@font-face {
+  font-family: "Drone Ranger";
+  src: url("/DroneRanger.ttf") format("truetype");
+}
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
   background: $PRIMARY;
 }
-
-#logo {
+#app-container {
   max-width: 100%;
+  width: 1000px;
   margin: auto;
+}
+#app-top-menu {
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  position: relative;
+}
+#logo {
+  max-width: 30%;
   display: block;
-  width: 600px;
+  padding: 8px;
 }

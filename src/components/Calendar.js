@@ -17,12 +17,19 @@ export default class Calendar extends React.Component {
   render() {
     return (
       <div className="Calendar">
+        <div className="top-bar">
+          <div className="search-input-container">
+            <input type="text" className="search" placeholder="SEARCH" />
+          </div>
+          <button className="calendar-button" onClick={() => alert("Not implemented yet!")} />
+        </div>
+        <div className="day-header">
+          <span className="header-count">{this.state.events.length} events</span>
+          <span className="header-day">Today</span>
+          <span className="header-count">Some cities</span>
+        </div>
         {this.state.events.map((event, index) => {
-          return (
-            <div className={index % 2 ? "even" : "odd"}>
-              <EventListing event={event} />
-            </div>
-          )
+          return <EventListing event={event} key={event.identifiers[0]} />
         })}
       </div>
     );
